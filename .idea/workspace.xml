@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a2d7dc8-bf79-4d8f-bb17-a445c1d656a8" name="Changes" comment="">
+    <list default="true" id="1a2d7dc8-bf79-4d8f-bb17-a445c1d656a8" name="Changes" comment="first API commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/log/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/log/Log.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/CommonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/CommonService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/uritemplate/PetStoreUri.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/uritemplate/PetStoreUri.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/uritemplate/UriTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/uritemplate/UriTemplate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/steps/UserServiceSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/steps/UserServiceSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/PetStoreTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/PetStoreTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,8 +44,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.PetStoreTests.createUserArrayTest">
-    <configuration name="PetStoreTests" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.PetStoreTests.completeTest">
+    <configuration name="PetStoreTests.completeTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="petStore-tests" />
       <extension name="coverage">
         <pattern>
@@ -59,24 +55,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.PetStoreTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PetStoreTests.createUserArrayTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="petStore-tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.PetStoreTests" />
-      <option name="METHOD_NAME" value="createUserArrayTest" />
+      <option name="METHOD_NAME" value="completeTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -84,7 +63,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PetStoreTests.createUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PetStoreTests.deleteUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="petStore-tests" />
       <extension name="coverage">
         <pattern>
@@ -94,7 +73,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.PetStoreTests" />
-      <option name="METHOD_NAME" value="createUserTest" />
+      <option name="METHOD_NAME" value="deleteUserTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -102,7 +81,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PetStoreTests.getAllUsersTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PetStoreTests.getUser" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="petStore-tests" />
       <extension name="coverage">
         <pattern>
@@ -112,7 +91,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.PetStoreTests" />
-      <option name="METHOD_NAME" value="getAllUsersTest" />
+      <option name="METHOD_NAME" value="getUser" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -120,7 +99,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PetStoreTests.getUser1User" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PetStoreTests.logOutWithUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="petStore-tests" />
       <extension name="coverage">
         <pattern>
@@ -130,7 +109,25 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.PetStoreTests" />
-      <option name="METHOD_NAME" value="getUser1User" />
+      <option name="METHOD_NAME" value="logOutWithUserTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PetStoreTests.updateUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="petStore-tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.PetStoreTests" />
+      <option name="METHOD_NAME" value="updateUserTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -140,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PetStoreTests.createUserArrayTest" />
-        <item itemvalue="TestNG.PetStoreTests.createUserTest" />
+        <item itemvalue="TestNG.PetStoreTests.completeTest" />
         <item itemvalue="TestNG.PetStoreTests.getUser1User" />
-        <item itemvalue="TestNG.PetStoreTests" />
-        <item itemvalue="TestNG.PetStoreTests.getAllUsersTest" />
+        <item itemvalue="TestNG.PetStoreTests.deleteUserTest" />
+        <item itemvalue="TestNG.PetStoreTests.updateUserTest" />
+        <item itemvalue="TestNG.PetStoreTests.logOutWithUserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -157,6 +154,14 @@
       <option name="presentableId" value="Default" />
       <updated>1666681108149</updated>
     </task>
+    <task id="LOCAL-00001" summary="first API commit">
+      <created>1666699740744</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666699740744</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,5 +174,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first API commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first API commit" />
   </component>
 </project>

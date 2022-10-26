@@ -24,4 +24,20 @@ public class UserServiceSteps {
     public static Response createUser(ArrayList<User> expectedUser) {
         return USER_SERVICE.postRequest(CREATE_USER, expectedUser);
     }
+
+    public static Response loginWithUser() {
+        return USER_SERVICE.getRequest(USER_LOGIN);
+    }
+
+    public static Response logoutWithUser() {
+        return USER_SERVICE.getRequest(USER_LOGOUT);
+    }
+
+    public static Response updateUser(User userUpdate) {
+        return USER_SERVICE.putRequest(USER_BY_USERNAME, userUpdate);
+    }
+
+    public static Response deleteUser() {
+        return USER_SERVICE.deleteRequest(USER_BY_USERNAME);
+    }
 }

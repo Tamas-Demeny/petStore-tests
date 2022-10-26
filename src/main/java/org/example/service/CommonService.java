@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
 
-public class CommonService {
+public abstract class CommonService {
     private static final String BASE_URL = "https://petstore.swagger.io/v2/";
 
     private final Function<String, String> prepareUri = uri -> String.format("%s%s", BASE_URL, uri);
@@ -41,12 +41,26 @@ public class CommonService {
     }
 
     protected Response postRequest(String uri, Object body) {
-        return requestSpecification.body(body).expect().log().ifError()
+        Log.info("Sending the POST request to the Uri: " + prepareUri.apply(uri));
+        Response response = requestSpecification.body(body).expect().statusCode(HttpStatus.SC_OK).log().ifError()
                 .when().post(prepareUri.apply(uri));
+        Log.info("Response body is " + response.asPrettyString());
+        return response;
     }
 
-    protected void deleteRequest(String uri) {
-        requestSpecification.expect().statusCode(HttpStatus.SC_NO_CONTENT).log().ifError()
+    protected Response deleteRequest(String uri) {
+        Log.info("Sending the DELETE request to the Uri: " + prepareUri.apply(uri));
+        Response response = requestSpecification.expect().statusCode(HttpStatus.SC_OK).log().ifError()
                 .when().delete(prepareUri.apply(uri));
+        Log.info("Response body is " + response.asPrettyString());
+        return response;
+    }
+
+    protected Response putRequest(String uri, Object body) {
+        Log.info("Sending the PUT request to the Uri: " + prepareUri.apply(uri));
+        Response response = requestSpecification.body(body).expect().statusCode(HttpStatus.SC_OK)
+                .log().ifError().when().put(prepareUri.apply(uri));
+        Log.info("Response body is: " + response.asPrettyString());
+        return response;
     }
 }
