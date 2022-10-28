@@ -11,8 +11,6 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 
-import static org.example.service.uritemplate.PetPetUri.ADD_PET;
-
 public class PetStorePetTests {
     @Test
     public void createPetTest() {
@@ -31,7 +29,7 @@ public class PetStorePetTests {
 
     private Pet createPet() {
         Pet createdPet = new Pet();
-        LinkedHashMap<String, String> tagMap = new LinkedHashMap<String, String>();
+        LinkedHashMap<String, String> tagMap = new LinkedHashMap<>();
         tagMap.put("id", "");
         tagMap.put("name", "Ruf");
         ArrayList<LinkedHashMap<String, String>> tagArray = new ArrayList<>();
