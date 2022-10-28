@@ -3,26 +3,20 @@ package org.example.service;
 import io.restassured.response.Response;
 import org.example.service.uritemplate.UriTemplate;
 
-public class UserService extends CommonService {
-    private UserService() {
+public class Services extends CommonService {
+    private Services() {}
 
-    }
+    private static Services instance;
 
-    private static UserService instance;
-
-    public static UserService getInstance() {
+    public static Services getInstance() {
         if (instance == null) {
-            instance = new UserService();
+            instance = new Services();
         }
         return instance;
     }
 
     public Response getRequest(UriTemplate uri) {
         return super.getRequest(uri.getUri());
-    }
-
-    public Response getRequest(UriTemplate uri, int id) {
-        return super.getRequest(uri.getUri(id));
     }
 
     public Response postRequest(UriTemplate uri, Object body) {

@@ -2,16 +2,16 @@ package org.example.steps;
 
 import io.restassured.response.Response;
 import org.example.entities.User;
-import org.example.service.UserService;
+import org.example.service.Services;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 
-import static org.example.service.uritemplate.PetStoreUri.*;
+import static org.example.service.uritemplate.PetStoreUserUri.*;
 
 public class UserServiceSteps {
-    public static final UserService USER_SERVICE = UserService.getInstance();
+    public static final Services USER_SERVICE = Services.getInstance();
 
     public static List<User> getAllUsers() {
         return USER_SERVICE.getRequest(USER_BY).jsonPath().getList("", User.class);
