@@ -24,7 +24,7 @@ public class PetStoreOrderTests {
 
     @Test
     public void getOrderById() {
-        Response response = OrderServiceSteps.getOrderById();
+        OrderServiceSteps.getOrderById();
     }
 
     private StoreOrder createOrder() {

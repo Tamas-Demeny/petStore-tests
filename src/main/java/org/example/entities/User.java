@@ -1,9 +1,7 @@
 package org.example.entities;
 
-import lombok.*;
+import lombok.Data;
 import lombok.experimental.Accessors;
-
-import java.util.ArrayList;
 
 @Data
 @Accessors(chain = true)

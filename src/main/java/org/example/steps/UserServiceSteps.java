@@ -6,16 +6,11 @@ import org.example.service.Services;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
-import java.util.List;
 
 import static org.example.service.uritemplate.PetStoreUserUri.*;
 
 public class UserServiceSteps {
     public static final Services USER_SERVICE = Services.getInstance();
-
-    public static List<User> getAllUsers() {
-        return USER_SERVICE.getRequest(USER_BY).jsonPath().getList("", User.class);
-    }
 
     public static LinkedHashMap<String, String> getUser() {
         return USER_SERVICE.getRequest(USER_BY_USERNAME).jsonPath().get();
